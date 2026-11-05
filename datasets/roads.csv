@@ -1,0 +1,14 @@
+source,destination,distance
+DEPOT,A,4
+DEPOT,B,6
+DEPOT,C,8
+DEPOT,D,5
+DEPOT,E,7
+A,B,2
+A,C,5
+A,D,4
+B,C,2
+B,E,3
+C,D,2
+C,E,4
+D,E,3
