@@ -8,13 +8,13 @@ BASE_DIR = Path(__file__).resolve().parent
 PARCEL_FILE = BASE_DIR / "datasets" / "parcels.csv"
 ROAD_FILE = BASE_DIR / "datasets" / "roads.csv"
 
-# Read parcels
+
 with open(PARCEL_FILE, "r", encoding="utf-8-sig", newline="") as file:
     rows = list(csv.DictReader(file))
 
 parcels = [parcel_from_row(row) for row in rows]
 
-# Read roads
+
 with open(ROAD_FILE, "r", encoding="utf-8-sig", newline="") as file:
     roads = list(csv.DictReader(file))
 
